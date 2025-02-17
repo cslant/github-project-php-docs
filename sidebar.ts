@@ -2,11 +2,6 @@ module.exports = {
   GithubProjectPackageSidebar: [
     {
       type: 'doc',
-      id: 'README',
-      label: '👋 README',
-    },
-    {
-      type: 'doc',
       id: 'introduction',
       label: 'Introduction',
     },
@@ -32,7 +27,7 @@ module.exports = {
       link: {
         type: 'generated-index',
         title: 'Getting Started - Github Project PHP Docs',
-        description: 'Let\'s get started with the Github Project PHP Docs.' +
+        description: 'Let\'s get started with the Github Project PHP ' +
           'You can also find the installation guide and the configuration guide here.',
       },
       label: 'Getting Started',
