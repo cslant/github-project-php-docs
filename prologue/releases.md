@@ -14,7 +14,7 @@ tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','Github 
 
 Check release notes and upgrade instructions for the following Github Project PHP:
 
-## Laravel Like Prologue
+## Github Project PHP
 
 Check release notes
 for [cslant/github-project-php/release](https://github.com/cslant/github-project-php/releases). Or check the [CHANGELOG.md](https://github.com/cslant/github-project-php/blob/main/CHANGELOG.md) file.
