@@ -1,8 +1,8 @@
 ---
-title: Feature Requests | Laravel Like
-description: Request new features for the Laravel Like projects. Request new features for the Laravel Like projects. Get the list of all feature requests available in the Laravel Like projects.
-keywords: ['laravel like', 'feature requests', 'new features', 'request new features', 'feature requests for laravel like']
-tags: ['Feature Requests', 'New features', 'Requests', 'Laravel Like Feature', 'Support']
+title: Feature Requests | Github Project PHP
+description: Request new features for the Github Project PHP. Request new features for the Github Project PHP. Get the list of all feature requests available in the Github Project PHP.
+keywords: ['github project php', 'feature requests', 'new features', 'request new features', 'feature requests for Github Project PHP']
+tags: ['Feature Requests', 'New features', 'Requests', 'Github Project PHP Feature', 'Support']
 ---
 
 <head>
@@ -13,4 +13,4 @@ tags: ['Feature Requests', 'New features', 'Requests', 'Laravel Like Feature', '
 # 🔥 Feature Requests
 
 If you have any feature requests, please open an issue with the `feature request` label on
-the [GitHub repository](https://github.com/cslant/laravel-like/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=).
+the [GitHub repository](https://github.com/cslant/github-project-php/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=).
