@@ -1,8 +1,8 @@
 ---
-title: Requirements for running Laravel Like package in your environment
-description: Requirements for running Laravel Like package in your environment. All the dependencies and environment requirements are listed here. Check out the requirements for laravel like package.
-keywords: ["requirements", "environment", "dependencies for laravel like", "requirements for laravel like", "environment requirements", "laravel like environment requirements"]
-tags: ["Requirements", "Environment", "Dependencies", "Composer", "Laravel Like Requirements", "Environment Requirements", "Get Started"]
+title: Requirements for running Github Project PHP in your environment
+description: Requirements for running Github Project PHP in your environment. All the dependencies and environment requirements are listed here. Check out the requirements for Github Project PHP.
+keywords: ["requirements", "environment", "dependencies for github project php", "requirements for github project php", "environment requirements", "github project php environment requirements"]
+tags: ["Requirements", "Environment", "Dependencies", "Composer", "Github Project PHP Requirements", "Environment Requirements", "Get Started"]
 ---
 
 <head>
@@ -12,4 +12,4 @@ tags: ["Requirements", "Environment", "Dependencies", "Composer", "Laravel Like 
 
 # 📋 Requirements
 
-Here are the requirements for running Laravel Like package in your environment. All the dependencies and environment requirements are listed here.
+Here are the requirements for running Github Project PHP in your environment. All the dependencies and environment requirements are listed here.
