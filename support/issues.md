@@ -1,8 +1,8 @@
 ---
-title: Issues | Laravel Like
-description: Issues and bug reports for the Laravel Like projects. Report issues and bugs for the Laravel Like projects. Get the list of all issues available in the Laravel Like projects.
-keywords: ['laravel like', 'issues', 'bug reports', 'report issues', 'issues for laravel like']
-tags: ['Issues', 'Bug reports', 'Report issues', 'Laravel Like Issues', 'Laravel Like Bug Reports', 'Support']
+title: Issues | Github Project PHP
+description: Issues and bug reports for the Github Project PHP. Report issues and bugs for the Github Project PHP. Get the list of all issues available in the Github Project PHP.
+keywords: ['github project php', 'issues', 'bug reports', 'report issues', 'issues for github project php']
+tags: ['Issues', 'Bug reports', 'Report issues', 'Github Project PHP Issues', 'Github Project PHP Bug Reports', 'Support']
 ---
 
 <head>
@@ -12,6 +12,6 @@ tags: ['Issues', 'Bug reports', 'Report issues', 'Laravel Like Issues', 'Laravel
 
 # 📢 Issues
 
-If you find yourself stuck using this package, found a bug, or have a feature request. Please open an issue on [GitHub](https://github.com/cslant/laravel-like/issues).
+If you find yourself stuck using this package, found a bug, or have a feature request. Please open an issue on [GitHub](https://github.com/cslant/github-project-php/issues).
 
 We appreciate detailed and accurate reports that help us identify and replicate the issue.
