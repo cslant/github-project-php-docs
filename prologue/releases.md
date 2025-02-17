@@ -1,6 +1,6 @@
 ---
-title: Release Notes | Github Project PHP Docs
-description: Release notes and upgrade instructions for Github Project PHP Docs. Check the release notes and upgrade instructions for Github Project PHP Docs. See the release notes and upgrade instructions for Github Project PHP Docs.
+title: Release Notes | Github Project PHP
+description: Release notes and upgrade instructions for Github Project PHP. Check the release notes and upgrade instructions for Github Project PHP. See the release notes and upgrade instructions for Github Project PHP.
 keywords: [ 'Github Project PHP', 'release notes', 'upgrade instructions','Github Project PHP releases', 'Github Project PHP upgrade instructions' ]
 tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','Github Project PHP Prologue', 'Github Project PHP Release Notes' ]
 ---
@@ -12,7 +12,7 @@ tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','Github 
 
 # 🚀 Release Notes
 
-Check release notes and upgrade instructions for the following Github Project PHP Docs:
+Check release notes and upgrade instructions for the following Github Project PHP:
 
 ## Laravel Like Prologue
 
