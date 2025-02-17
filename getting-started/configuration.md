@@ -1,8 +1,8 @@
 ---
-title: Configuration Laravel Like
-description: All configuration for Laravel Like package to get started with it. Create interactions, set up the environment, and get the package ready for use.
-keywords: ["laravel Laravel Like", "configuration", "Laravel Like configuration", 'get started', 'Laravel Like get started']
-tags: ["Configuration", "Get Started", "Laravel Like Configuration", "Create Interactions", "Environment Setup", "Laravel Like Package", "Likes", "Dislikes", "Favorites", "Stars", "Upvotes", "Downvotes", "Reactions", "Votes"]
+title: Configuration Github Project PHP
+description: All configuration for Github Project PHP to get started with it. Create interactions, set up the environment, and get the package ready for use.
+keywords: ["Github Project PHP", "configuration", "Github Project PHP configuration", 'get started', 'Github Project PHP started']
+tags: ["Configuration", "Get Started", "Github Project PHP Configuration", "Create Interactions", "Environment Setup", "Github Project PHP", "Likes", "Dislikes", "Favorites", "Stars", "Upvotes", "Downvotes", "Reactions", "Votes"]
 ---
 
 <head>
@@ -12,5 +12,5 @@ tags: ["Configuration", "Get Started", "Laravel Like Configuration", "Create Int
 
 # 🛠 Configuration
 
-Here is the default configuration for Laravel Like package. You can customize the configuration as per your requirements.
+Here is the default configuration for Github Project PHP. You can customize the configuration as per your requirements.
 
