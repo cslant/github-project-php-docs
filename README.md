@@ -1,8 +1,8 @@
-# github-project-php-docs repo
+# github-project-php repo
 
 This repository contains the documentation for the Github Project PHP package.
 
-## Github Project PHP package
+## Github Project PHP
 
 - [Github Project PHP](https://github.com/cslant/github-project-php)
 
