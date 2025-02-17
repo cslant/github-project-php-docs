@@ -86,7 +86,7 @@ module.exports = {
           type: 'link',
           label: 'Github Project PHP',
           description: 'Check the source code of Github Project PHP on GitHub.',
-          href: 'https://github.com/cslant/github-project-php-docs',
+          href: 'https://github.com/cslant/github-project-php',
         },
       ],
     },
