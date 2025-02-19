@@ -1,7 +1,8 @@
 ---
 title: Introduction | GitHub Project PHP
 description: Introduction to GitHub Project PHP. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects efficiently. Get started to check out the features and functionalities of the GitHub Project PHP.
-keywords: ['github project php', 'github project', 'github project documentation', 'github project php documentation', 'github project php introduction']
+keywords: ['github project php', 'github project', 'github project documentation', 'github project php documentation', 'github project php introduction', 'github project php features', 'github project php functionalities']
+tags: ['github project php', 'github project', 'documentation', 'introduction', 'features', 'functionalities']
 ---
 
 <head>
@@ -15,7 +16,7 @@ keywords: ['github project php', 'github project', 'github project documentation
 
 GitHub Project PHP is a simple and **easy-to-use** package designed to help you **manage your GitHub projects** efficiently. It provides a webhook system to capture GitHub project activities and allows you to **automatically implement comments** on these actions.
 
-This package simplifies the process of managing and automating tasks related to GitHub project interactions, making it a valuable tool for developers working with GitHub projects in PHP.
+This package simplifies the process of managing and automating tasks related to GitHub project interactions, making it a valuable tool for developers working with GitHub projects.
 
 ---
 

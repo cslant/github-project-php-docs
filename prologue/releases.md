@@ -2,7 +2,7 @@
 title: Release Notes | GitHub Project PHP
 description: Release notes and upgrade instructions for GitHub Project PHP. Check the release notes and upgrade instructions for GitHub Project PHP. See the release notes and upgrade instructions for GitHub Project PHP.
 keywords: [ 'github project php', 'release notes', 'upgrade instructions','github project php releases', 'github project php upgrade instructions' ]
-tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','github project php Prologue', 'GitHub Project PHP Release Notes' ]
+tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','github project php Prologue', 'GitHub Project PHP Release Notes', 'features', 'functionalities']
 ---
 
 <head>
