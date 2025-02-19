@@ -77,7 +77,7 @@ module.exports = {
       link: {
         type: 'generated-index',
         title: 'Source Code - GitHub Project PHP',
-        description: 'Please check this section if you want to contribute to the GitHub Project PHP project. We will be happy to accept your contributions. Let\'s make the package better together!',
+        description: 'Please check this section if you want to contribute to the GitHub Project PHP package. We will be happy to accept your contributions. Let\'s make the package better together!',
       },
       label: 'GitHub Source',
       collapsed: false,
