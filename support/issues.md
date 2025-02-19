@@ -1,8 +1,8 @@
 ---
-title: Issues | Github Project PHP
-description: Issues and bug reports for the Github Project PHP. Report issues and bugs for the Github Project PHP. Get the list of all issues available in the Github Project PHP.
+title: Issues | GitHub Project PHP
+description: Issues and bug reports for the GitHub Project PHP. Report issues and bugs for the GitHub Project PHP. Get the list of all issues available in the GitHub Project PHP.
 keywords: ['github project php', 'issues', 'bug reports', 'report issues', 'issues for github project php']
-tags: ['Issues', 'Bug reports', 'Report issues', 'Github Project PHP Issues', 'Github Project PHP Bug Reports', 'Support']
+tags: ['Issues', 'Bug reports', 'Report issues', 'GitHub Project PHP Issues', 'GitHub Project PHP Bug Reports', 'Support']
 ---
 
 <head>

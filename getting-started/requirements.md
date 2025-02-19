@@ -1,8 +1,8 @@
 ---
-title: Requirements for running Github Project PHP in your environment
-description: Requirements for running Github Project PHP in your environment. All the dependencies and environment requirements are listed here. Check out the requirements for Github Project PHP.
+title: Requirements for running GitHub Project PHP in your environment
+description: Requirements for running GitHub Project PHP in your environment. All the dependencies and environment requirements are listed here. Check out the requirements for GitHub Project PHP.
 keywords: ["requirements", "environment", "dependencies for github project php", "requirements for github project php", "environment requirements", "github project php environment requirements"]
-tags: ["Requirements", "Environment", "Dependencies", "Composer", "Github Project PHP Requirements", "Environment Requirements", "Get Started"]
+tags: ["Requirements", "Environment", "Dependencies", "Composer", "GitHub Project PHP Requirements", "Environment Requirements", "Get Started"]
 ---
 
 <head>
@@ -12,4 +12,4 @@ tags: ["Requirements", "Environment", "Dependencies", "Composer", "Github Projec
 
 # 📋 Requirements
 
-Here are the requirements for running Github Project PHP in your environment. All the dependencies and environment requirements are listed here.
+Here are the requirements for running GitHub Project PHP in your environment. All the dependencies and environment requirements are listed here.

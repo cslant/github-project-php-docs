@@ -1,8 +1,8 @@
 ---
-title: Release Notes | Github Project PHP
-description: Release notes and upgrade instructions for Github Project PHP. Check the release notes and upgrade instructions for Github Project PHP. See the release notes and upgrade instructions for Github Project PHP.
-keywords: [ 'Github Project PHP', 'release notes', 'upgrade instructions','Github Project PHP releases', 'Github Project PHP upgrade instructions' ]
-tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','Github Project PHP Prologue', 'Github Project PHP Release Notes' ]
+title: Release Notes | GitHub Project PHP
+description: Release notes and upgrade instructions for GitHub Project PHP. Check the release notes and upgrade instructions for GitHub Project PHP. See the release notes and upgrade instructions for GitHub Project PHP.
+keywords: [ 'github project php', 'release notes', 'upgrade instructions','github project php releases', 'github project php upgrade instructions' ]
+tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','github project php Prologue', 'GitHub Project PHP Release Notes' ]
 ---
 
 <head>
@@ -12,9 +12,9 @@ tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','Github 
 
 # 🚀 Release Notes
 
-Check release notes and upgrade instructions for the following Github Project PHP:
+Check release notes and upgrade instructions for the following GitHub Project PHP:
 
-## Github Project PHP Package
+## GitHub Project PHP Package
 
 Check release notes
 for [cslant/github-project-php/release](https://github.com/cslant/github-project-php/releases). Or check the [CHANGELOG.md](https://github.com/cslant/github-project-php/blob/main/CHANGELOG.md) file.

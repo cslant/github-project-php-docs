@@ -2,9 +2,9 @@
 
 This repository contains the documentation for the Github Project PHP package.
 
-## Github Project PHP Package
+## GitHub Project PHP Package
 
-- [Github Project PHP](https://github.com/cslant/github-project-php)
+- [GitHub Project PHP](https://github.com/cslant/github-project-php)
 
 **Documentation is available at [https://docs.cslant.com/github-project-php](https://docs.cslant.com/github-project-php).**
 
