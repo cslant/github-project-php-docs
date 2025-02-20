@@ -1,6 +1,6 @@
 # github-project-php repo
 
-This repository contains the documentation for the Github Project PHP package.
+This repository contains the documentation for the Github Project PHP package. It provides a simple and easy-to-use webhooks system to get the GitHub project's actions and implement comments on all activities in the project.
 
 ## GitHub Project PHP Package
 
