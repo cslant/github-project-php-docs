@@ -1,13 +1,24 @@
 ---
 title: Installation | GitHub Project PHP
 description: Installation instructions for GitHub Project PHP. Install the package via composer, publish the config file, and migrate the database. Get started with GitHub Project PHP.
-keywords: ["GitHub Project PHP", "installation", "install GitHub Project PHP", 'get started', 'github project php get started', 'composer', 'publish config', 'migrate database']
 tags: ["Installation", "Get Started", "Composer", "Publish Config", "GitHub Project PHP", "Migrate Database", "GitHub Project PHP Installation", "Interactions", "GitHub Project PHP Package", "Import Trait"]
 ---
 
 <head>
   <meta name="robots" content="index,follow" />
   <meta name="author" content="CSlant" />
+  <link rel="canonical" href="https://docs.cslant.com/github-project-php/getting-started/installation" />
+  
+  {/* Open Graph tags */}
+  <meta property="og:title" content="Installation | GitHub Project PHP" />
+  <meta property="og:description" content="Installation instructions for GitHub Project PHP. Install the package via composer, publish the config file, and migrate the database. Get started with GitHu..." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://docs.cslant.com/github-project-php/getting-started/installation" />
+  
+  {/* Twitter Card tags */}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Installation | GitHub Project PHP" />
+  <meta name="twitter:description" content="Installation instructions for GitHub Project PHP. Install the package via composer, publish the config file, and migrate the database. Get started with GitHu..." />
 </head>
 
 # 🔧 Installation

@@ -24,23 +24,25 @@ function HomepageHeader() {
   return (
     <>
       <Head>
-        <title>Homepage | Telegram Git Notifier | CSlant Documentation</title>
-        <link rel="canonical" href="https://docs.cslant.com/telegram-git-notifier" data-rh="true" />
+        <title>Homepage | GitHub Project PHP | CSlant Documentation</title>
+        <link rel="canonical" href="https://docs.cslant.com/github-project-php" data-rh="true" />
         <meta name="description"
-              content="Telegram Git Notifier is a package that allows you to create a Telegram bot to receive notifications from GitHub or GitLab events. You can use this package with Laravel or any PHP application."
-              data-rh="true" />
-        <meta name="keywords"
-              content="laravel telegram git notifier,telegram git notifier,telegram bot,gitlab,github,laravel,php,package,documentation"
+              content="GitHub Project PHP is a package that helps you manage your GitHub projects efficiently. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects."
               data-rh="true" />
         <meta name="author" content="CSlant" data-rh="true" />
         <meta name="robots" content="index, follow" data-rh="true" />
-        <meta property="og:site_name" content="Telegram Git Notifier Documentation" data-rh="true" />
+        <meta property="og:site_name" content="GitHub Project PHP Documentation" data-rh="true" />
         <meta property="og:type" content="website" data-rh="true" />
-        <meta property="og:title" content="Telegram Git Notifier Documentation" data-rh="true" />
+        <meta property="og:title" content="GitHub Project PHP Documentation" data-rh="true" />
         <meta property="og:description"
-              content="Telegram Git Notifier is a package that allows you to create a Telegram bot to receive notifications from GitHub or GitLab events. You can use this package with Laravel or any PHP application."
+              content="GitHub Project PHP is a package that helps you manage your GitHub projects efficiently. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects."
               data-rh="true" />
-        <meta property="og:url" content="https://docs.cslant.com/telegram-git-notifier" data-rh="true" />
+        <meta property="og:url" content="https://docs.cslant.com/github-project-php" data-rh="true" />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" data-rh="true" />
+        <meta name="twitter:title" content="GitHub Project PHP Documentation" data-rh="true" />
+        <meta name="twitter:description" content="GitHub Project PHP is a package that helps you manage your GitHub projects efficiently. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects." data-rh="true" />
       </Head>
       <header className="main_header">
         <div className="container">

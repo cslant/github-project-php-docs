@@ -1,13 +1,24 @@
 ---
 title: Configuration GitHub Project PHP
 description: All configuration for GitHub Project PHP to get started with it. Create interactions, set up the environment, and get the package ready for use.
-keywords: ["GitHub Project PHP", "configuration", "GitHub Project PHP configuration", 'get started', 'github project php started']
 tags: ["Configuration", "Get Started", "GitHub Project PHP Configuration", "Create Interactions", "Environment Setup", "GitHub Project PHP", "GitHub Project PHP Started"]
 ---
 
 <head>
   <meta name="robots" content="index,follow" />
   <meta name="author" content="CSlant" />
+  <link rel="canonical" href="https://docs.cslant.com/github-project-php/getting-started/configuration" />
+  
+  {/* Open Graph tags */}
+  <meta property="og:title" content="Configuration GitHub Project PHP" />
+  <meta property="og:description" content="All configuration for GitHub Project PHP to get started with it. Create interactions, set up the environment, and get the package ready for use." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://docs.cslant.com/github-project-php/getting-started/configuration" />
+  
+  {/* Twitter Card tags */}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Configuration GitHub Project PHP" />
+  <meta name="twitter:description" content="All configuration for GitHub Project PHP to get started with it. Create interactions, set up the environment, and get the package ready for use." />
 </head>
 
 # 🛠 Configuration

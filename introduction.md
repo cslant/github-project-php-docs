@@ -1,13 +1,24 @@
 ---
 title: Introduction | GitHub Project PHP
 description: Introduction to GitHub Project PHP. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects efficiently. Get started to check out the features and functionalities of the GitHub Project PHP.
-keywords: ['github project php', 'github project', 'github project documentation', 'github project php documentation', 'github project php introduction', 'github project php features', 'github project php functionalities']
 tags: ['github project php', 'github project', 'documentation', 'introduction', 'features', 'functionalities']
 ---
 
 <head>
   <meta name="robots" content="index,follow" />
   <meta name="author" content="CSlant" />
+  <link rel="canonical" href="https://docs.cslant.com/github-project-php/introduction" />
+  
+  {/* Open Graph tags */}
+  <meta property="og:title" content="Introduction | GitHub Project PHP" />
+  <meta property="og:description" content="Introduction to GitHub Project PHP. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects efficiently. Get starte..." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://docs.cslant.com/github-project-php/introduction" />
+  
+  {/* Twitter Card tags */}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Introduction | GitHub Project PHP" />
+  <meta name="twitter:description" content="Introduction to GitHub Project PHP. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects efficiently. Get starte..." />
 </head>
 
 # Introduction

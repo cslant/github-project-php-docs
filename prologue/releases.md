@@ -1,13 +1,24 @@
 ---
 title: Release Notes | GitHub Project PHP
 description: Release notes and upgrade instructions for GitHub Project PHP. Check the release notes and upgrade instructions for GitHub Project PHP. See the release notes and upgrade instructions for GitHub Project PHP.
-keywords: [ 'github project php', 'release notes', 'upgrade instructions','github project php releases', 'github project php upgrade instructions' ]
 tags: [ 'Release notes', 'Upgrade instructions', 'Releases', 'Prologue','github project php Prologue', 'GitHub Project PHP Release Notes', 'features', 'functionalities']
 ---
 
 <head>
   <meta name="robots" content="index,follow" />
   <meta name="author" content="CSlant" />
+  <link rel="canonical" href="https://docs.cslant.com/github-project-php/prologue/releases" />
+  
+  {/* Open Graph tags */}
+  <meta property="og:title" content="Release Notes | GitHub Project PHP" />
+  <meta property="og:description" content="Release notes and upgrade instructions for GitHub Project PHP. Check the release notes and upgrade instructions for GitHub Project PHP. See the release notes..." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://docs.cslant.com/github-project-php/prologue/releases" />
+  
+  {/* Twitter Card tags */}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Release Notes | GitHub Project PHP" />
+  <meta name="twitter:description" content="Release notes and upgrade instructions for GitHub Project PHP. Check the release notes and upgrade instructions for GitHub Project PHP. See the release notes..." />
 </head>
 
 # 🚀 Release Notes
