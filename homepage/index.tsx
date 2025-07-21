@@ -26,24 +26,32 @@ function HomepageHeader() {
       <Head>
         <title>Homepage | GitHub Project PHP | CSlant Documentation</title>
         <link rel="canonical" href="https://docs.cslant.com/github-project-php" data-rh="true" />
-        <meta name="description"
-              content="GitHub Project PHP is a package that helps you manage your GitHub projects efficiently. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects."
-              data-rh="true" />
+        <meta name="description" content="GitHub Project PHP Documentation - Documentation" data-rh="true" />
         <meta name="author" content="CSlant" data-rh="true" />
         <meta name="robots" content="index, follow" data-rh="true" />
+        <meta name="theme-color" content="#2e8555" data-rh="true" />
+        <meta name="generator" content="Docusaurus" data-rh="true" />
+        
+        {/* Open Graph Meta Tags */}
         <meta property="og:site_name" content="GitHub Project PHP Documentation" data-rh="true" />
         <meta property="og:type" content="website" data-rh="true" />
-        <meta property="og:title" content="GitHub Project PHP Documentation" data-rh="true" />
-        <meta property="og:description"
-              content="GitHub Project PHP is a package that helps you manage your GitHub projects efficiently. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects."
-              data-rh="true" />
+        <meta property="og:title" content="Homepage | GitHub Project PHP | CSlant Documentation" data-rh="true" />
+        <meta property="og:description" content="GitHub Project PHP Documentation - Documentation" data-rh="true" />
         <meta property="og:url" content="https://docs.cslant.com/github-project-php" data-rh="true" />
-
-        {/* Twitter Card tags */}
+        <meta property="og:locale" content="en_US" data-rh="true" />
+        
+        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" data-rh="true" />
-        <meta name="twitter:title" content="GitHub Project PHP Documentation" data-rh="true" />
-        <meta name="twitter:description" content="GitHub Project PHP is a package that helps you manage your GitHub projects efficiently. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects." data-rh="true" />
-      </Head>
+        <meta name="twitter:title" content="Homepage | GitHub Project PHP | CSlant Documentation" data-rh="true" />
+        <meta name="twitter:description" content="GitHub Project PHP Documentation - Documentation" data-rh="true" />
+        <meta name="twitter:creator" content="@cslantofficial" data-rh="true" />
+        <meta name="twitter:site" content="@cslantofficial" data-rh="true" />
+        
+        {/* Additional Meta Tags */}
+        <meta name="format-detection" content="telephone=no" data-rh="true" />
+        <meta name="mobile-web-app-capable" content="yes" data-rh="true" />
+        <meta name="apple-mobile-web-app-capable" content="yes" data-rh="true" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" data-rh="true" /></Head>
       <header className="main_header">
         <div className="container">
           <div className="row">
