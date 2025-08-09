@@ -1,6 +1,7 @@
 ---
 title: Introduction | GitHub Project PHP
 description: Introduction to GitHub Project PHP. Learn about GitHub Project PHP, its features, and how it can help you manage your GitHub projects efficiently. Get started to check out the features and functionalities of the GitHub Project PHP.
+keywords: ['github project php', 'github project', 'github project documentation', 'github project php documentation', 'github project php introduction', 'github project php features', 'github project php functionalities']
 tags: ['github project php', 'github project', 'documentation', 'introduction', 'features', 'functionalities']
 ---
 
