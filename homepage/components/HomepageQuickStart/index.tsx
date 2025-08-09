@@ -15,7 +15,7 @@ const QuickStartList: QuickStartStepProps[] = [
   {
     title: '2. Publish Config',
     description: 'Publish the configuration file',
-    code: 'php artisan vendor:publish --provider="CSlant\\\\GitHubProject\\\\GithubProjectServiceProvider"',
+    code: 'php artisan vendor:publish --provider="CSlant\\\\GitHubProject\\\\GithubProjectServiceProvider --tag="config"',
   },
   {
     title: '3. Configure Environment',
