@@ -2,35 +2,45 @@
 
 // Quick Start Section
 .quickStart {
-  padding: 4rem 0;
+  padding: 3rem 1rem;
   background-color: var(--ifm-background-color);
 
   h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--ifm-color-primary);
+    text-align: center;
   }
 
   > .container > .row:first-child {
     margin-bottom: 2rem;
+    text-align: center;
+    
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--ifm-color-emphasis-700);
+    }
   }
 
   .col {
-    padding: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
   }
 
   .card {
     height: 100%;
     border-radius: 8px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid var(--ifm-color-emphasis-200);
     transition: all 0.3s ease;
-    background: white;
+    background: var(--ifm-card-background-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
 
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      border-color: #d0d7de;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      border-color: var(--ifm-color-primary);
     }
   }
 
@@ -93,22 +103,298 @@
   }
 }
 
-// Responsive styles for QuickStart
+// Responsive styles
+@media (max-width: 1200px) {
+  .quickStart {
+    .cardHeader {
+      padding: 1.25rem;
+      
+      h3 {
+        font-size: 1.1rem;
+      }
+      
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    
+    .cardBody {
+      padding: 1.25rem;
+    }
+  }
+  
+  .homepage-header {
+    .title {
+      font-size: 2.5rem;
+    }
+    
+    .tagline {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .quickStart {
-    padding: 3rem 1rem;
-
+    padding: 2.5rem 1rem;
+    
     h2 {
       font-size: 1.75rem;
+      margin-bottom: 0.75rem;
     }
-
+    
+    .col {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
     .card {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
+      
+      &:hover {
+        transform: none;
+      }
+    }
+    
+    .cardHeader {
+      padding: 1rem;
+      
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+    
+    .cardBody {
+      padding: 1rem;
+    }
+  }
+  
+  .homepage-header {
+    padding: 4rem 1rem;
+    
+    .title {
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    
+    .tagline {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .button-container {
+      flex-direction: column;
+      gap: 1rem;
+      
+      .button {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .features-section {
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .quickStart {
+    padding: 2rem 0.5rem;
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    > .container > .row:first-child p {
+      font-size: 0.95rem;
+    }
+    
+    .col {
+      padding: 0.25rem;
+    }
+    
+    .cardHeader {
+      padding: 0.75rem;
+      
+      h3 {
+        font-size: 1rem;
+      }
+      
+      p {
+        font-size: 0.85rem;
+      }
+    }
+    
+    .cardBody {
+      padding: 0.75rem;
+    }
+    
+    .codeBlock {
+      padding: 0.75rem;
+      font-size: 0.8rem;
+    }
+    
+    .copyButton {
+      padding: 0.2rem 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+  
+  .homepage-header {
+    padding: 3rem 1rem;
+    
+    .title {
+      font-size: 1.75rem;
+    }
+    
+    .tagline {
+      font-size: 1rem;
+    }
+  }
+  
+  .features-section {
+    padding: 3rem 1rem;
+    
+    .section-title {
+      font-size: 1.5rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .feature-card {
+      padding: 1.25rem;
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-title {
+      font-size: 1.1rem;
+    }
+    
+    .feature-description {
+      font-size: 0.9rem;
     }
   }
 }
 
 // Custom SCSS for GitHub Project PHP Docs
+
+// Feature Icons
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  font-size: 2.5rem;
+  margin: 0 auto 1.5rem;
+  
+  @media (max-width: 768px) {
+    width: 56px;
+    height: 56px;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  @media (max-width: 480px) {
+    width: 48px;
+    height: 48px;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// Feature Cards
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.3s ease;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    
+    .feature-icon {
+      transform: scale(1.1);
+    }
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--ifm-heading-color);
+  }
+  
+  .feature-description {
+    color: var(--ifm-font-color-base);
+    opacity: 0.9;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+// Features Section
+.features-section {
+  padding: 5rem 1rem;
+  background-color: var(--ifm-background-surface-color);
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    color: var(--ifm-heading-color);
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: var(--ifm-color-emphasis-700);
+    line-height: 1.6;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 500px;
+    }
+  }
+}
 
 // Custom styles
 .homepage-header {
@@ -197,7 +483,7 @@
         border-color: rgba(240, 246, 252, 0.25);
       }
     }
-  }\n
+  }
   .github-icon {
     margin-right: 0.5rem;
     width: 18px;
