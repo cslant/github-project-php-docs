@@ -118,10 +118,6 @@
   margin-bottom: 1.5rem;
   display: inline-block;
   line-height: 1;
-  background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 /* Feature Title */

@@ -24,7 +24,7 @@
   font-weight: 800;
   margin: 0 0 1.5rem;
   line-height: 1.15;
-  background: linear-gradient(90deg, #58a6ff, #79c0ff);
+  background: linear-gradient(135deg, #00f36c 0%, #1a1e22 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,6 +87,7 @@
 
 .primaryButton:hover {
   background-color: #2ea043;
+  color: white;
   border-color: rgba(240, 246, 252, 0.2);
 }
 
