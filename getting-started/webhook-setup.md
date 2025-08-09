@@ -15,9 +15,9 @@ This guide will walk you through setting up GitHub webhooks to work with the Git
 - Admin access to the repository or organization
 - [GitHub Project PHP installed and configured](./installation)
 
-## Step 1: Configure the Webhook in GitHub
+### Step 1: Configure the Webhook in GitHub
 
-### For Repository Webhooks
+#### For Repository Webhooks
 
 1. Go to your GitHub repository
 2. Click on "Settings" > "Webhooks" > "Add webhook"
@@ -43,14 +43,14 @@ This guide will walk you through setting up GitHub webhooks to work with the Git
 
 5. Click "Add webhook" to save
 
-### For Organization Webhooks
+#### For Organization Webhooks
 
 1. Go to your GitHub organization
 2. Click on "Settings" > "Webhooks" > "Add webhook"
 3. Follow the same configuration as above
 4. Note: Organization webhooks require admin permissions
 
-## Step 2: Verify Webhook Configuration
+### Step 2: Verify Webhook Configuration
 
 After saving the webhook, GitHub will send a "ping" event to your endpoint. You can verify this by:
 
@@ -61,7 +61,7 @@ After saving the webhook, GitHub will send a "ping" event to your endpoint. You 
 
 If you see a green checkmark (✓), your webhook is properly configured. If not, check the error message and your server logs.
 
-## Step 3: Test with a Real Event
+### Step 3: Test with a Real Event
 
 1. Go to your GitHub project
 2. Make a change to a project item (e.g., change a status field)

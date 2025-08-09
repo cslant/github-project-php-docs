@@ -5,6 +5,7 @@ import Head from '@docusaurus/Head';
 import HomepageHeader from './components/HomepageHeader';
 import HomepageFeatures from './components/HomepageFeatures';
 import HomepageQuickStart from './components/HomepageQuickStart';
+import '../assets/styles/custom.scss';
 
 interface HomeProps {
   // Add any props if needed

@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import styles from './styles.module.css';
 
 // Feature item interface
 interface FeatureItemProps {
@@ -45,20 +44,20 @@ const FeatureList: FeatureItemProps[] = [
 // Main component
 const HomepageFeatures = (): ReactElement => {
   return (
-    <section className={styles.features}>
-      <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>Powerful Features</h2>
-        <p className={styles.sectionSubtitle}>
+    <section className="features-section">
+      <div className="container">
+        <h2 className="section-title">Powerful Features</h2>
+        <p className="section-subtitle">
           Everything you need to manage your GitHub Projects effectively
         </p>
-        <div className={styles.featuresGrid}>
+        <div className="features-grid">
           {FeatureList.map((props, idx) => (
-            <div key={idx} className={styles.featureCard}>
-              <div className={styles.featureIcon} role="img" aria-label={props.title}>
+            <div key={idx} className="feature-card">
+              <div className="feature-icon" role="img" aria-label={props.title}>
                 {props.emoji}
               </div>
-              <h3 className={styles.featureTitle}>{props.title}</h3>
-              <p className={styles.featureDescription}>{props.description}</p>
+              <h3 className="feature-title">{props.title}</h3>
+              <p className="feature-description">{props.description}</p>
             </div>
           ))}
         </div>

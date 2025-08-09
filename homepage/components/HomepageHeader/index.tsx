@@ -1,12 +1,11 @@
 import React, { ReactElement } from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
-import styles from './styles.module.css';
 
 // GitHub icon component
 const GitHubIcon = () => (
   <svg 
-    className={styles.githubIcon} 
+    className="github-icon" 
     viewBox="0 0 16 16" 
     fill="currentColor"
     aria-hidden="true"
@@ -19,22 +18,22 @@ export default function HomepageHeader(): ReactElement {
   const { siteConfig } = useDocusaurusContext();
   
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <h1 className={styles.title}>
+    <header className="homepage-header">
+      <div className="container">
+        <h1 className="title">
           Automate Your GitHub Project Workflow
         </h1>
         
-        <p className={styles.tagline}>
+        <p className="tagline">
           The ultimate PHP package for seamless GitHub Project management. 
           Track issues, automate tasks, and stay in sync with real-time updates - 
           all within your Laravel application.
         </p>
         
-        <div className={styles.buttonContainer}>
+        <div className="button-container">
           <Link
             to="/github-project-php/introduction"
-            className={`${styles.button} ${styles.primaryButton}`}
+            className="button primary"
           >
             Get Started
           </Link>
@@ -43,7 +42,7 @@ export default function HomepageHeader(): ReactElement {
             href="https://github.com/cslant/github-project-php"
             target="_blank"
             rel="noopener noreferrer"
-            className={`${styles.button} ${styles.secondaryButton}`}
+            className="button secondary"
           >
             <GitHubIcon />
             GitHub Repository
