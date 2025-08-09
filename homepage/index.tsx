@@ -1,38 +1,10 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Head from '@docusaurus/Head';
+import HomepageHeader from './components/HomepageHeader';
 import HomepageFeatures from './components/HomepageFeatures';
 import HomepageQuickStart from './components/HomepageQuickStart';
-import Head from '@docusaurus/Head';
-import styles from '../assets/styles/index.module.css';
-
-function HomepageHeader(): React.ReactElement {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Get Started
-          </Link>
-          <Link
-            className="button button--outline button--secondary button--lg margin-left--md"
-            href="https://github.com/cslant/github-project-php"
-            target="_blank"
-            rel="noopener noreferrer">
-            GitHub Repository
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
 
 interface HomeProps {
   // Add any props if needed
