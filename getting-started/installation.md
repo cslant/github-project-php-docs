@@ -49,7 +49,42 @@ You can **install the package via composer**:
 composer require cslant/github-project-php
 ```
 
-The package will automatically register its service provider.
+This will install the latest stable version of the package. The package will automatically register its service provider.
+
+## Verify Installation
+
+After installation, you can verify that the package was installed correctly by running:
+
+```bash
+composer show cslant/github-project-php
+```
+
+You should see output similar to:
+
+```
+name     : cslant/github-project-php
+descrip. : A Laravel package for managing GitHub projects
+keywords : github, project, laravel, webhook
+versions : * v1.0.0
+type     : library
+license  : MIT License
+...
+```
+
+## Service Provider
+
+The package will automatically register its service provider. So you don't need to manually add it to your `config/app.php`.
+
+## Facade (Optional)
+
+If you want to use the facade, add it to your `config/app.php`:
+
+```php
+'aliases' => [
+    // Other aliases...
+    'GitHubProject' => CSlant\GitHubProject\Facades\GitHubProjectFacade::class,
+],
+```
 
 ## Publish configuration file
 

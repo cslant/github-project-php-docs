@@ -41,9 +41,48 @@ tags: ['github project php', 'github project', 'documentation', 'introduction', 
 
 **_GitHub Project PHP_** 
 
-GitHub Project PHP is a simple and **easy-to-use** package designed to help you **manage your GitHub projects** efficiently. It provides a webhook system to capture GitHub project activities and allows you to **automatically implement comments** on these actions.
+GitHub Project PHP is a powerful and **easy-to-use** package designed to help you **manage your GitHub projects** efficiently. It provides a webhook system to capture GitHub project activities and allows you to **automatically implement comments** on these actions.
 
 This package simplifies the process of managing and automating tasks related to GitHub project interactions, making it a valuable tool for developers working with GitHub projects.
+
+## Key Features
+
+- **Automatic Commenting**: Automatically post comments when project items are updated
+- **Flexible Templates**: Customize the format of comments for different field types
+- **Webhook Integration**: Easy setup with GitHub webhooks
+- **Queue Support**: Process webhook events asynchronously
+- **Extensible**: Easily add support for custom field types
+- **Detailed Logging**: Track all activities and errors
+
+## Quick Start
+
+1. [Install the package](./getting-started/installation)
+2. [Configure your webhook](./getting-started/webhook-setup)
+3. [Customize the templates](./advanced/templates) (optional)
+4. Start tracking project updates!
+
+## Supported Field Types
+
+The package includes built-in support for the following field types:
+
+- Text
+- Number
+- Date
+- Single Select
+- Multi Select
+- Checkbox
+- Textarea
+- Iteration
+- Milestone
+
+[Learn how to add custom field types →](./advanced/templates#adding-a-new-field-type)
+
+## Need Help?
+
+- Check out the [troubleshooting guide](./support/troubleshooting) for common issues
+- Browse the [examples](./examples) for implementation ideas
+- [Report an issue](https://github.com/cslant/github-project-php/issues) if you encounter bugs
+- [Request a feature](https://github.com/cslant/github-project-php/discussions) for new functionality
 
 ---
 

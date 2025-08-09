@@ -27,8 +27,7 @@ module.exports = {
       link: {
         type: 'generated-index',
         title: 'Getting Started - GitHub Project PHP',
-        description: 'Let\'s get started with the GitHub Project PHP ' +
-          'You can also find the installation guide and the configuration guide here.',
+        description: 'Let\'s get started with the GitHub Project PHP. You can find installation, configuration, and setup guides here.',
       },
       label: 'Getting Started',
       items: [
@@ -45,7 +44,12 @@ module.exports = {
         {
           type: 'doc',
           id: 'getting-started/configuration',
-          label: '🛠 Configuration',
+          label: '⚙️ Configuration',
+        },
+        {
+          type: 'doc',
+          id: 'getting-started/webhook-setup',
+          label: '🔄 Webhook Setup',
         },
       ],
       collapsed: false,
@@ -53,21 +57,65 @@ module.exports = {
     {
       type: 'category',
       link: {
-        title: 'Support - GitHub Project PHP',
         type: 'generated-index',
-        description: 'Please check this section if you have any problems with the bot or you want to request a new feature. We will be happy to help you!',
+        title: 'Advanced - GitHub Project PHP',
+        description: 'Advanced topics for customizing and extending the GitHub Project PHP package. How to customize the templates and use the API reference.',
+      },
+      label: 'Advanced',
+      items: [
+        {
+          type: 'doc',
+          id: 'advanced/templates',
+          label: '🎨 Customizing Templates',
+        },
+        {
+          type: 'doc',
+          id: 'advanced/api-reference',
+          label: '🔌 API Reference',
+        },
+      ],
+      collapsed: false,
+    },
+    {
+      type: 'category',
+      link: {
+        type: 'generated-index',
+        title: 'Examples - GitHub Project PHP',
+        description: 'Practical examples and sample configurations for the GitHub Project PHP package.',
+      },
+      label: 'Examples',
+      items: [
+        {
+          type: 'doc',
+          id: 'examples/README',
+          label: '📋 Examples Overview',
+        },
+      ],
+      collapsed: false,
+    },
+    {
+      type: 'category',
+      link: {
+        type: 'generated-index',
+        title: 'Support - GitHub Project PHP',
+        description: 'Get help with common issues, report bugs, or request new features.',
       },
       label: 'Support',
       items: [
         {
           type: 'doc',
+          id: 'support/troubleshooting',
+          label: '🐞 Troubleshooting',
+        },
+        {
+          type: 'doc',
           id: 'support/feature-requests',
-          label: '🚀 Feature Requests',
+          label: '💡 Feature Requests',
         },
         {
           type: 'doc',
           id: 'support/issues',
-          label: '🐛 Issues',
+          label: '⚠️ Report Issues',
         },
       ],
       collapsed: false,
@@ -76,17 +124,29 @@ module.exports = {
       type: 'category',
       link: {
         type: 'generated-index',
-        title: 'Source Code - GitHub Project PHP',
-        description: 'Please check this section if you want to contribute to the GitHub Project PHP package. We will be happy to accept your contributions. Let\'s make the package better together!',
+        title: 'Resources - GitHub Project PHP',
+        description: 'Additional resources and links for the GitHub Project PHP package.',
       },
-      label: 'GitHub Source',
+      label: 'Resources',
       collapsed: false,
       items: [
         {
           type: 'link',
-          label: 'GitHub Project PHP',
-          description: 'Check the source code of GitHub Project PHP on GitHub.',
+          label: 'GitHub Repository',
+          description: 'View the source code on GitHub',
           href: 'https://github.com/cslant/github-project-php',
+        },
+        {
+          type: 'link',
+          label: 'Packagist',
+          description: 'View on Packagist',
+          href: 'https://packagist.org/packages/cslant/github-project-php',
+        },
+        {
+          type: 'link',
+          label: 'GitHub Issues',
+          description: 'Report issues or bugs',
+          href: 'https://github.com/cslant/github-project-php/issues',
         },
       ],
     },
