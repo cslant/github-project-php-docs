@@ -1,15 +1,70 @@
-# github-project-php repo
+# GitHub Project PHP Documentation
 
-This repository contains the documentation for the Github Project PHP package. It provides a simple and easy-to-use webhooks system to get the GitHub project's actions and implement comments on all activities in the project.
+Welcome to the official documentation for GitHub Project PHP, a powerful Laravel package that helps you automate your GitHub Project workflow with real-time updates and notifications.
 
-## GitHub Project PHP Package
+## Features
 
-- [GitHub Project PHP](https://github.com/cslant/github-project-php)
+- **Real-time Updates**: Get instant notifications for all project changes
+- **Customizable Templates**: Tailor comments to match your team's workflow
+- **Easy Integration**: Simple setup with GitHub webhooks
+- **Flexible Deployment**: Works with any PHP application
 
-**Documentation is available at [https://docs.cslant.com/github-project-php](https://docs.cslant.com/github-project-php).**
+## Getting Started
 
+1. **Install the package**
+   ```bash
+   composer require cslant/github-project-php
+   ```
 
---- 
+2. **Publish the configuration**
+   ```bash
+   php artisan vendor:publish --provider="CSlant\GitHubProject\GithubProjectServiceProvider"
+   ```
+
+3. **Configure your environment**
+   Add these to your `.env` file:
+   ```
+   GITHUB_ACCESS_TOKEN=your_github_token
+   GITHUB_WEBHOOK_SECRET=your_webhook_secret
+   ```
+
+4. **Set up a GitHub webhook**
+   - Go to your repository/organization settings
+   - Add a new webhook with the following settings:
+     - Payload URL: `https://your-domain.com/github-project/webhook`
+     - Content type: `application/json`
+     - Secret: Your webhook secret from `.env`
+     - Events: Select the events you want to track
+
+## Local Development
+
+To run the documentation site locally:
+
+1. Install dependencies:
+   ```bash
+   yarn
+   ```
+
+2. Start the development server:
+   ```bash
+   yarn start
+   ```
+
+## Building for Production
+
+To build the static site:
+
+```bash
+yarn build
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## 📢 Issues
 

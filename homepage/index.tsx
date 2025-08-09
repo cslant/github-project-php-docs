@@ -1,85 +1,100 @@
-import Link from '@docusaurus/Link';
-import SvgBackground
-  from '@site/repos/telegram-git-notifier-docs/assets/public/images/telegram-git-notifier-background.svg';
-import Heading from '@theme/Heading';
-import Layout from '@theme/Layout';
+import React from 'react';
 import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import HomepageFeatures from './components/HomepageFeatures';
+import HomepageQuickStart from './components/HomepageQuickStart';
+import Head from '@docusaurus/Head';
+import styles from '../assets/styles/index.module.css';
 
-import Head from '@docusaurus/core/lib/client/exports/Head';
-import { JSX } from 'react';
-
-const HeaderData = {
-  title: "Documentation For Telegram Git Notifier",
-  Svg: SvgBackground,
-  description:
-    "With this package, you can create a Telegram bot to receive notifications from GitHub or GitLab events. You can use this package with Laravel or any PHP application.",
-  tags: ["telegram", "git", "notifier", "bot", "github", "gitlab"],
-  startButtonLink: "/telegram-git-notifier/introduction",
-  startButtonLabel: "Get Started",
-};
-
-function HomepageHeader() {
-  const {Svg, title, description, startButtonLink, startButtonLabel} = HeaderData;
-
+function HomepageHeader(): React.ReactElement {
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <>
-      <Head>
-        <title>Homepage | GitHub Project PHP | CSlant Documentation</title>
-        <link rel="canonical" href="https://docs.cslant.com/github-project-php" data-rh="true" />
-        <meta name="description" content="GitHub Project PHP Documentation - Documentation" data-rh="true" />
-        <meta name="author" content="CSlant" data-rh="true" />
-        <meta name="robots" content="index, follow" data-rh="true" />
-        <meta name="theme-color" content="#2e8555" data-rh="true" />
-        <meta name="generator" content="Docusaurus" data-rh="true" />
-        
-        <meta property="og:site_name" content="GitHub Project PHP Documentation" data-rh="true" />
-        <meta property="og:type" content="website" data-rh="true" />
-        <meta property="og:title" content="Homepage | GitHub Project PHP | CSlant Documentation" data-rh="true" />
-        <meta property="og:description" content="GitHub Project PHP Documentation - Documentation" data-rh="true" />
-        <meta property="og:url" content="https://docs.cslant.com/github-project-php" data-rh="true" />
-        <meta property="og:locale" content="en_US" data-rh="true" />
-        
-        <meta name="twitter:card" content="summary_large_image" data-rh="true" />
-        <meta name="twitter:title" content="Homepage | GitHub Project PHP | CSlant Documentation" data-rh="true" />
-        <meta name="twitter:description" content="GitHub Project PHP Documentation - Documentation" data-rh="true" />
-        <meta name="twitter:creator" content="@cslantofficial" data-rh="true" />
-        <meta name="twitter:site" content="@cslantofficial" data-rh="true" />
-        
-        <meta name="format-detection" content="telephone=no" data-rh="true" />
-        <meta name="mobile-web-app-capable" content="yes" data-rh="true" />
-        <meta name="apple-mobile-web-app-capable" content="yes" data-rh="true" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" data-rh="true" /></Head>
-      <header className="main_header">
-        <div className="container">
-          <div className="row">
-            <div className="col col--5 left_header">
-              <Heading as="h1" className="hero__title main_title">
-              {title}
-              </Heading>
-              <p className="hero__subtitle">{description}</p>
-              <div className="buttons">
-                <Link className="button button--info button--lg" to={startButtonLink}>
-                  {startButtonLabel}
-                </Link>
-              </div>
-            </div>
-            <div className={clsx("col col--7")}>
-              <Svg />
-            </div>
-          </div>
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className="container">
+        <h1 className="hero__title">{siteConfig.title}</h1>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro">
+            Get Started
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg margin-left--md"
+            href="https://github.com/cslant/github-project-php"
+            target="_blank"
+            rel="noopener noreferrer">
+            GitHub Repository
+          </Link>
         </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
 
-export default function GithubProjectHome(): JSX.Element {
-  return (
-    <Layout title="Home Page" description="github-project-php-docs">
-      <HomepageHeader/>
-      <main>
-       test
-      </main>
-    </Layout>
-  );
+interface HomeProps {
+  // Add any props if needed
+}
+
+interface LayoutProps {
+  children: React.ReactNode;
+  title?: string;
+  description?: string;
+  image?: string;
+  keywords?: string;
+  wrapperClassName?: string;
+  noFooter?: boolean;
+  permalink?: string;
+  searchMetadatas?: {
+    version?: string;
+    tag?: string;
+  };
+}
+
+export default function Home(_props: HomeProps): React.ReactElement {
+  const { siteConfig } = useDocusaurusContext();
+  
+  // Set meta tags for SEO
+  const metaTitle = `${siteConfig.title} - ${siteConfig.tagline}`;
+  const metaDescription = "A powerful PHP package for managing GitHub Projects with webhooks. Automate project management, track issues, and streamline your workflow with real-time updates.";
+  
+  const layoutProps: LayoutProps = {
+    title: metaTitle,
+    description: metaDescription,
+    children: (
+      <>
+        <Head>
+          <title>GitHub Project PHP | Automate Your GitHub Project Workflow</title>
+          <meta name="description" content="Automate GitHub Project tracking and notifications with this powerful Laravel package. Get real-time updates and comprehensive activity logs." />
+          <meta name="keywords" content="github, project, php, laravel, automation, webhook, notifications, workflow" />
+          <meta name="author" content="CSlant" />
+          <meta name="robots" content="index, follow" />
+          
+          {/* Open Graph / Facebook */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://docs.cslant.com/github-project-php/" />
+          <meta property="og:title" content="GitHub Project PHP | Automate Your GitHub Project Workflow" />
+          <meta property="og:description" content="Automate GitHub Project tracking and notifications with this powerful Laravel package." />
+          <meta property="og:image" content="https://docs.cslant.com/img/github-project-og.png" />
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:url" content="https://docs.cslant.com/github-project-php/" />
+          <meta name="twitter:title" content="GitHub Project PHP | Automate Your GitHub Project Workflow" />
+          <meta name="twitter:description" content="Automate GitHub Project tracking and notifications with this powerful Laravel package." />
+          <meta name="twitter:image" content="https://docs.cslant.com/img/github-project-twitter.png" />
+        </Head>
+        
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+          <HomepageQuickStart />
+        </main>
+      </>
+    )
+  };
+  
+  return <Layout {...layoutProps} />;
 }

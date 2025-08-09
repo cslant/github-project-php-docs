@@ -1,0 +1,78 @@
+.quickStart {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.quickStart h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.quickStart > .container > .row:first-child {
+  margin-bottom: 2rem;
+}
+
+.quickStart .col {
+  padding: 1rem;
+}
+
+.card {
+  height: 100%;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card__header {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+.card__header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card__body {
+  padding: 1.5rem;
+}
+
+.card__body p {
+  margin-bottom: 1rem;
+  color: var(--ifm-font-color-base);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.codeBlock {
+  background-color: var(--ifm-code-background);
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  margin: 0;
+  white-space: pre;
+  color: var(--ifm-code-color);
+  font-family: var(--ifm-font-family-monospace);
+}
+
+@media (max-width: 996px) {
+  .quickStart .col {
+    margin-bottom: 1.5rem;
+  }
+  
+  .quickStart h2 {
+    font-size: 1.75rem;
+  }
+}
