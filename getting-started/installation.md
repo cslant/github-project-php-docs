@@ -1,6 +1,7 @@
 ---
 title: Installation | GitHub Project PHP
 description: Installation instructions for GitHub Project PHP. Install the package via composer, publish the config file, and migrate the database. Get started with GitHub Project PHP.
+keywords: ["GitHub Project PHP", "installation", "install GitHub Project PHP", 'get started', 'github project php get started', 'composer', 'publish config', 'migrate database']
 tags: ["Installation", "Get Started", "Composer", "Publish Config", "GitHub Project PHP", "Migrate Database", "GitHub Project PHP Installation", "Interactions", "GitHub Project PHP Package", "Import Trait"]
 ---
 
