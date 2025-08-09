@@ -4,6 +4,8 @@ description: All configuration for GitHub Project PHP to get started with it. Cr
 tags: ["Configuration", "Get Started", "GitHub Project PHP Configuration", "Create Interactions", "Environment Setup", "GitHub Project PHP", "GitHub Project PHP Started"]
 ---
 
+import selectScopeImg from '@site/repos/github-project-php-docs/assets/public/images/select-scopes.png';
+
 <head>
   <meta name="robots" content="index,follow" />
   <meta name="author" content="CSlant" />
@@ -128,8 +130,11 @@ To generate a GitHub access token:
 4. Select these scopes:
    - `projects_v2` - For organization projects
    - `projects_v2_items` - For project items
-   
-![select-scopes.png](../assets/select-scopes.png)
+
+<p align="center">
+  <img src={selectScopeImg} alt="Telegram git notify bot menu" />
+</p>
+
 
 5. Click "Generate token" and copy it to your `.env` file
 
