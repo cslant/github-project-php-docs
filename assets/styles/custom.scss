@@ -1,5 +1,115 @@
 // Custom SCSS for GitHub Project PHP Docs
 
+// Quick Start Section
+.quickStart {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-color);
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--ifm-color-primary);
+  }
+
+  > .container > .row:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .col {
+    padding: 1rem;
+  }
+
+  .card {
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.03);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      border-color: #d0d7de;
+    }
+  }
+
+  .cardHeader {
+    padding: 1.5rem 1.5rem 0.5rem;
+    border-bottom: 1px solid #e1e4e8;
+    background-color: #f6f8fa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #24292e;
+    }
+
+    p {
+      margin: 0.5rem 0 0;
+      color: #57606a;
+      font-size: 0.95rem;
+    }
+  }
+
+  .cardBody {
+    padding: 1.5rem;
+  }
+
+  .codeBlock {
+    background: #0d1117;
+    border-radius: 6px;
+    padding: 1rem;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 0.95rem;
+    color: #c9d1d9;
+    overflow-x: auto;
+    margin: 0;
+  }
+
+  .copyButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(240, 246, 252, 0.1);
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    color: #c9d1d9;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    &:hover {
+      background: rgba(240, 246, 252, 0.2);
+      border-color: rgba(240, 246, 252, 0.3);
+    }
+  }
+}
+
+// Responsive styles for QuickStart
+@media (max-width: 768px) {
+  .quickStart {
+    padding: 3rem 1rem;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    .card {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// Custom SCSS for GitHub Project PHP Docs
+
 // Custom styles
 .homepage-header {
   padding: 6rem 2rem;

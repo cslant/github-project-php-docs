@@ -1,4 +1,4 @@
-import React, { CSSProperties, ReactElement } from 'react';
+import React, { ReactElement, useState } from 'react';
 
 interface QuickStartStepProps {
   title: string;
@@ -29,98 +29,59 @@ const QuickStartList: QuickStartStepProps[] = [
   },
 ];
 
-const cardStyle: CSSProperties = {
-  height: '100%',
-  border: '1px solid var(--ifm-color-emphasis-300)',
-  borderRadius: '8px',
-  overflow: 'hidden',
-  transition: 'all 0.3s ease',
-  backgroundColor: 'var(--ifm-card-background-color)',
-  boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-};
+const QuickStartStep = ({ title, description, code }: QuickStartStepProps): ReactElement => {
+  const [copied, setCopied] = useState(false);
 
-const cardHeaderStyle: CSSProperties = {
-  padding: '1.25rem 1.5rem',
-  backgroundColor: 'var(--ifm-color-primary)',
-  color: 'white',
-};
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
-const cardBodyStyle: CSSProperties = {
-  padding: '1.5rem',
-};
-
-const codeBlockStyle: CSSProperties = {
-  backgroundColor: 'var(--ifm-code-background)',
-  borderRadius: '4px',
-  padding: '1rem',
-  fontSize: '0.85rem',
-  overflowX: 'auto',
-  whiteSpace: 'pre',
-  fontFamily: 'var(--ifm-font-family-monospace)',
-  margin: '0',
-};
-
-function QuickStartStep({ title, description, code }: QuickStartStepProps): ReactElement {
   return (
-    <div className="col col--3" style={{ padding: '1rem' }}>
-      <div style={cardStyle}>
-        <div style={cardHeaderStyle}>
-          <h3 style={{ margin: 0, fontSize: '1.1rem', fontWeight: 600 }}>{title}</h3>
-        </div>
-        <div style={cardBodyStyle}>
-          <p style={{ marginBottom: '1rem', color: 'var(--ifm-font-color-base)' }}>{description}</p>
-          <pre style={codeBlockStyle}>
+    <div className="card">
+      <div className="cardHeader">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+      <div className="cardBody">
+        <div style={{ position: 'relative' }}>
+          <button onClick={copyToClipboard} className="copyButton">
+            {copied ? 'Copied!' : 'Copy'}
+          </button>
+          <pre className="codeBlock">
             <code>{code}</code>
           </pre>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default function HomepageQuickStart(): ReactElement {
-  const sectionStyle: CSSProperties = { 
-    padding: '4rem 0', 
-    backgroundColor: 'var(--ifm-background-color)' 
-  };
-  
-  const headingStyle: CSSProperties = { 
-    fontSize: '2rem', 
-    marginBottom: '1rem', 
-    color: 'var(--ifm-color-primary)',
-    textAlign: 'center'
-  };
-  
-  const paragraphStyle: CSSProperties = {
-    textAlign: 'center',
-    marginBottom: '2rem',
-    color: 'var(--ifm-font-color-base)',
-    opacity: 0.9
-  };
-  
-  const rowStyle: CSSProperties = { 
-    margin: '0 -1rem' 
-  };
-
+const HomepageQuickStart = (): ReactElement => {
   return (
-    <section style={sectionStyle}>
+    <section className="quickStart">
       <div className="container">
         <div className="row">
           <div className="col col--12">
-            <h2 style={headingStyle}>
-              Get Started in Minutes
-            </h2>
-            <p style={paragraphStyle}>
-              Follow these simple steps to integrate GitHub Project PHP into your workflow
-            </p>
+            <h2>Quick Start</h2>
+            <p>Get started with GitHub Project PHP in just a few simple steps</p>
           </div>
         </div>
-        <div className="row" style={rowStyle}>
-          {QuickStartList.map((props, idx) => (
-            <QuickStartStep key={idx} {...props} />
+        <div className="row">
+          {QuickStartList.map((step, idx) => (
+            <div key={idx} className="col col--12 col-md-4">
+              <QuickStartStep
+                title={step.title}
+                description={step.description}
+                code={step.code}
+              />
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default HomepageQuickStart;
