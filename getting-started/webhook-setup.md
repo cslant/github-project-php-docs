@@ -122,7 +122,7 @@ If a webhook delivery fails, GitHub will automatically retry. You can configure 
 ## Next Steps
 
 - [Customize comment templates](../advanced/templates) to change how updates are displayed
-- [Set up queue processing](../configuration#queue-configuration) for better performance
+- [Set up queue processing](../getting-started/configuration#queue-configuration) for better performance
 - [Explore the API reference](../advanced/api-reference) for advanced use cases
 
 ## Step 2: Configure Your Environment
@@ -179,6 +179,6 @@ After saving the webhook, GitHub will send a ping event to your endpoint. You ca
 
 ## Next Steps
 
-- [Customizing Comment Templates](./../advanced/templates)
-- [Configuration Options](./configuration)
-- [Troubleshooting Common Issues](./../support/troubleshooting)
+- [Customizing Comment Templates](../advanced/templates)
+- [Configuration Options](../getting-started/configuration)
+- [Troubleshooting Common Issues](../support/troubleshooting)

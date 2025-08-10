@@ -183,9 +183,3 @@ curl -X POST \
     }
   }'
 ```
-
-## Next Steps
-
-- [Webhook Setup](../getting-started/webhook-setup)
-- [Customizing Templates](../advanced/templates)
-- [API Reference](../advanced/api-reference)

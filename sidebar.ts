@@ -87,7 +87,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          id: 'examples/README',
+          id: 'examples/index',
           label: '📋 Examples Overview',
         },
       ],
