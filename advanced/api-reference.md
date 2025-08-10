@@ -1,6 +1,6 @@
 ---
 title: API Reference | GitHub Project PHP
-description: Complete API reference for extending and customizing GitHub Project PHP.
+description: Complete API reference for extending and customizing GitHub Project PHP. Learn how to extend and customize the GitHub Project PHP package.
 tags: ["api", "reference", "extending", "customization", "development"]
 ---
 

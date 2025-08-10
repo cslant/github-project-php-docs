@@ -1,6 +1,6 @@
 ---
 title: Customizing Templates | GitHub Project PHP
-description: Learn how to customize the comment templates for different field types in GitHub Project PHP.
+description: Learn how to customize the comment templates for different field types in GitHub Project PHP. Alter the appearance and content of the comments to match your team's workflow.
 tags: ["templates", "customization", "field types", "styling", "markdown"]
 ---
 
