@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement, useEffect, useRef, useState } from 'react';
 
 // Feature item interface
 interface FeatureItemProps {
@@ -41,6 +41,46 @@ const FeatureList: FeatureItemProps[] = [
   },
 ];
 
+// Feature card with scroll animation
+const FeatureCard = ({ title, emoji, description, index }: FeatureItemProps & { index: number }): ReactElement => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.15 }
+    );
+    observer.observe(el);
+    return () => observer.unobserve(el);
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className="feature-card"
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
+        transition: `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`,
+      }}
+    >
+      <div className="feature-icon" role="img" aria-label={title}>
+        {emoji}
+      </div>
+      <h3 className="feature-title">{title}</h3>
+      <p className="feature-description">{description}</p>
+    </div>
+  );
+};
+
 // Main component
 const HomepageFeatures = (): ReactElement => {
   return (
@@ -52,13 +92,7 @@ const HomepageFeatures = (): ReactElement => {
         </p>
         <div className="features-grid">
           {FeatureList.map((props, idx) => (
-            <div key={idx} className="feature-card">
-              <div className="feature-icon" role="img" aria-label={props.title}>
-                {props.emoji}
-              </div>
-              <h3 className="feature-title">{props.title}</h3>
-              <p className="feature-description">{props.description}</p>
-            </div>
+            <FeatureCard key={idx} index={idx} {...props} />
           ))}
         </div>
       </div>
