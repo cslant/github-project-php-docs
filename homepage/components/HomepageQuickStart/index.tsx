@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement, useState, useEffect, useRef } from 'react';
 
 interface QuickStartStepProps {
   title: string;
@@ -29,8 +29,26 @@ const QuickStartList: QuickStartStepProps[] = [
   },
 ];
 
-const QuickStartStep = ({ title, description, code }: QuickStartStepProps): ReactElement => {
+const QuickStartStep = ({ title, description, code, index }: QuickStartStepProps & { index: number }): ReactElement => {
   const [copied, setCopied] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.15 }
+    );
+    observer.observe(el);
+    return () => observer.unobserve(el);
+  }, []);
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(code);
@@ -39,7 +57,15 @@ const QuickStartStep = ({ title, description, code }: QuickStartStepProps): Reac
   };
 
   return (
-    <div className="card">
+    <div
+      ref={ref}
+      className="card"
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
+        transition: `opacity 0.5s ease ${index * 0.12}s, transform 0.5s ease ${index * 0.12}s`,
+      }}
+    >
       <div className="cardHeader">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -47,7 +73,7 @@ const QuickStartStep = ({ title, description, code }: QuickStartStepProps): Reac
       <div className="cardBody">
         <div style={{ position: 'relative' }}>
           <button onClick={copyToClipboard} className="copyButton">
-            {copied ? 'Copied!' : 'Copy'}
+            {copied ? '✓ Copied!' : '📋 Copy'}
           </button>
           <pre className="codeBlock">
             <code>{code}</code>
@@ -75,6 +101,7 @@ const HomepageQuickStart = (): ReactElement => {
                 title={step.title}
                 description={step.description}
                 code={step.code}
+                index={idx}
               />
             </div>
           ))}
