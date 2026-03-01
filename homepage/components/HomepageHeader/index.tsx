@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
+import { useMouseGlow } from '@site/src/components/useMouseGlow';
+import MouseGlowOverlay from '@site/src/components/MouseGlowOverlay';
 
 // GitHub icon component
 const GitHubIcon = () => (
@@ -15,10 +16,15 @@ const GitHubIcon = () => (
 );
 
 export default function HomepageHeader(): ReactElement {
-  const { siteConfig } = useDocusaurusContext();
-  
+  const { glow, onMouseMove, onMouseLeave } = useMouseGlow();
+
   return (
-    <header className="homepage-header">
+    <header
+      className="homepage-header"
+      onMouseMove={onMouseMove}
+      onMouseLeave={onMouseLeave}
+    >
+      <MouseGlowOverlay glow={glow} color="rgba(35, 134, 54, 0.2)" />
       <div className="container">
         <h1 className="title">
           Automate Your GitHub Project Workflow
