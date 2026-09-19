@@ -1,109 +1,61 @@
-import React, { ReactElement, useState, useEffect, useRef } from 'react';
+import React, { ReactElement } from 'react';
+import StepCard from '@site/src/components/softui/StepCard';
+import SectionHeader from '@site/src/components/softui/SectionHeader';
+import softui from '@site/src/components/softui/softui.module.css';
 
 interface QuickStartStepProps {
+  step: number;
   title: string;
   description: string;
-  code: string;
+  code?: string;
 }
 
 const QuickStartList: QuickStartStepProps[] = [
   {
-    title: '1. Install Package',
+    step: 1,
+    title: 'Install Package',
     description: 'Add the package to your Laravel project using Composer',
     code: 'composer require cslant/github-project-php',
   },
   {
-    title: '2. Publish Config',
+    step: 2,
+    title: 'Publish Config',
     description: 'Publish the configuration file',
     code: 'php artisan vendor:publish --provider="CSlant\\\\GitHubProject\\\\GithubProjectServiceProvider --tag="config"',
   },
   {
-    title: '3. Configure Environment',
+    step: 3,
+    title: 'Configure Environment',
     description: 'Add your GitHub credentials to .env',
     code: 'GITHUB_ACCESS_TOKEN=your_github_token\nGITHUB_WEBHOOK_SECRET=your_webhook_secret',
   },
   {
-    title: '4. Set Up Webhook',
-    description: 'Configure GitHub webhook in your repository/organization settings',
-    code: 'Payload URL: https://your-domain.com/github-project/webhook\nContent type: application/json\nSecret: your_webhook_secret',
+    step: 4,
+    title: 'Set Up Webhook',
+    description: 'Configure the GitHub webhook in your repository or organization settings',
+    code: 'Payload URL: https://your-domain.com/github-project/webhook\nSecret: your_webhook_secret',
   },
 ];
-
-const QuickStartStep = ({ title, description, code, index }: QuickStartStepProps & { index: number }): ReactElement => {
-  const [copied, setCopied] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.unobserve(el);
-  }, []);
-
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  return (
-    <div
-      ref={ref}
-      className="card"
-      style={{
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
-        transition: `opacity 0.5s ease ${index * 0.12}s, transform 0.5s ease ${index * 0.12}s`,
-      }}
-    >
-      <div className="cardHeader">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-      <div className="cardBody">
-        <div style={{ position: 'relative' }}>
-          <button onClick={copyToClipboard} className="copyButton">
-            {copied ? '✓ Copied!' : '📋 Copy'}
-          </button>
-          <pre className="codeBlock">
-            <code>{code}</code>
-          </pre>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const HomepageQuickStart = (): ReactElement => {
   return (
     <section className="quickStart">
       <div className="container">
-        <div className="row">
-          <div className="col col--12">
-            <h2>Quick Start</h2>
-            <p>Get started with GitHub Project PHP in just a few simple steps</p>
-          </div>
-        </div>
-        <div className="row">
+        <SectionHeader
+          title="Quick Start"
+          subtitle="Get started with GitHub Project PHP in just a few simple steps"
+          accent="linear-gradient(135deg, #2ea043, #58a6ff)"
+        />
+        <div className={softui.grid4}>
           {QuickStartList.map((step, idx) => (
-            <div key={idx} className="col col--12 col-md-4">
-              <QuickStartStep
-                title={step.title}
-                description={step.description}
-                code={step.code}
-                index={idx}
-              />
-            </div>
+            <StepCard
+              key={idx}
+              step={step.step}
+              title={step.title}
+              description={step.description}
+              code={step.code}
+              delay={idx * 0.12}
+            />
           ))}
         </div>
       </div>

@@ -1,13 +1,14 @@
-import React, { ReactElement, useEffect, useRef, useState } from 'react';
+import React, { ReactElement } from 'react';
+import SoftCard from '@site/src/components/softui/SoftCard';
+import SectionHeader from '@site/src/components/softui/SectionHeader';
+import softui from '@site/src/components/softui/softui.module.css';
 
-// Feature item interface
 interface FeatureItemProps {
   title: string;
   description: string;
   emoji: string;
 }
 
-// Features list
 const FeatureList: FeatureItemProps[] = [
   {
     title: 'Real-time Updates',
@@ -41,58 +42,24 @@ const FeatureList: FeatureItemProps[] = [
   },
 ];
 
-// Feature card with scroll animation
-const FeatureCard = ({ title, emoji, description, index }: FeatureItemProps & { index: number }): ReactElement => {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.15 }
-    );
-    observer.observe(el);
-    return () => observer.unobserve(el);
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      className="feature-card"
-      style={{
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
-        transition: `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`,
-      }}
-    >
-      <div className="feature-icon" role="img" aria-label={title}>
-        {emoji}
-      </div>
-      <h3 className="feature-title">{title}</h3>
-      <p className="feature-description">{description}</p>
-    </div>
-  );
-};
-
-// Main component
 const HomepageFeatures = (): ReactElement => {
   return (
     <section className="features-section">
       <div className="container">
-        <h2 className="section-title">Powerful Features</h2>
-        <p className="section-subtitle">
-          Everything you need to manage your GitHub Projects effectively
-        </p>
-        <div className="features-grid">
-          {FeatureList.map((props, idx) => (
-            <FeatureCard key={idx} index={idx} {...props} />
+        <SectionHeader
+          title="Powerful Features"
+          subtitle="Everything you need to manage your GitHub Projects effectively"
+          accent="linear-gradient(135deg, #2ea043, #58a6ff)"
+        />
+        <div className={softui.grid3}>
+          {FeatureList.map((feature, idx) => (
+            <SoftCard key={idx} delay={idx * 0.1}>
+              <div style={{ fontSize: '2.2rem', marginBottom: '0.6rem' }}>{feature.emoji}</div>
+              <h3 style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '0.4rem' }}>
+                {feature.title}
+              </h3>
+              <p className="m-0">{feature.description}</p>
+            </SoftCard>
           ))}
         </div>
       </div>
